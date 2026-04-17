@@ -1,0 +1,156 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e56]: "Create a pricing card component with three tiers: Basic, Pro, and Enterprise"
+            - img [ref=e59]
+          - generic [ref=e84]:
+            - img [ref=e87]
+            - generic [ref=e92]:
+              - generic [ref=e95]: str_replace_editor
+              - separator [ref=e96]
+              - generic [ref=e99]: str_replace_editor
+              - separator [ref=e100]
+              - generic [ref=e103]: str_replace_editor
+              - separator [ref=e104]
+              - generic [ref=e105]:
+                - paragraph [ref=e106]: "Done. Created a pricing card component with three tiers:"
+                - list [ref=e107]:
+                  - listitem [ref=e108]:
+                    - strong [ref=e109]: Basic
+                    - text: — entry-level plan with core features
+                  - listitem [ref=e110]:
+                    - strong [ref=e111]: Pro
+                    - text: — featured tier (highlighted with gradient background, badge, and scale effect)
+                  - listitem [ref=e112]:
+                    - strong [ref=e113]: Enterprise
+                    - text: — custom pricing for large organizations
+                - paragraph [ref=e114]: "Features:"
+                - list [ref=e115]:
+                  - listitem [ref=e116]: Smooth hover animations with lift effect and shadow glow
+                  - listitem [ref=e117]: Pro tier scales up and has a "Most Popular" badge
+                  - listitem [ref=e118]: Interactive buttons with click feedback
+                  - listitem [ref=e119]: Feature lists with checkmarks
+                  - listitem [ref=e120]: Responsive grid layout (stacks on mobile, 3 columns on desktop)
+                  - listitem [ref=e121]: Custom gradient styling and shadows for visual depth
+        - generic [ref=e19]:
+          - textbox "Describe the React component you want to create..." [ref=e20]
+          - button [disabled] [ref=e21]:
+            - img [ref=e22]
+    - separator [ref=e25]
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - tablist [ref=e30]:
+          - tab "Preview" [ref=e31]
+          - tab "Code" [selected] [ref=e32]
+        - generic [ref=e33]:
+          - button "Sign In" [ref=e34]
+          - button "Sign Up" [ref=e35]
+      - generic [ref=e122]:
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - generic [ref=e130] [cursor=pointer]:
+              - img [ref=e131]
+              - img [ref=e133]
+              - generic [ref=e135]: components
+            - generic [ref=e136]:
+              - generic [ref=e138] [cursor=pointer]:
+                - img [ref=e139]
+                - generic [ref=e144]: PricingCard.jsx
+              - generic [ref=e146] [cursor=pointer]:
+                - img [ref=e147]
+                - generic [ref=e152]: PricingCards.jsx
+          - generic [ref=e154] [cursor=pointer]:
+            - img [ref=e155]
+            - generic [ref=e160]: App.jsx
+        - separator [ref=e161]
+        - code [ref=e166]:
+          - generic [ref=e167]:
+            - generic [ref=e169]:
+              - generic [ref=e349]: "1"
+              - generic [ref=e176]: "2"
+              - generic [ref=e350]:
+                - generic [ref=e351] [cursor=pointer]: 
+                - generic [ref=e352]: "3"
+              - generic [ref=e354]: "4"
+              - generic [ref=e356]: "5"
+              - generic [ref=e357]:
+                - generic [ref=e358] [cursor=pointer]: 
+                - generic [ref=e359]: "6"
+              - generic [ref=e361]: "7"
+              - generic [ref=e195]: "8"
+              - generic [ref=e199]: "9"
+              - generic [ref=e203]: "10"
+              - generic [ref=e362]:
+                - generic [ref=e363] [cursor=pointer]: 
+                - generic [ref=e364]: "11"
+              - generic [ref=e207]: "12"
+              - generic [ref=e368]:
+                - generic [ref=e369] [cursor=pointer]: 
+                - generic [ref=e370]: "13"
+              - generic [ref=e371]:
+                - generic [ref=e372] [cursor=pointer]: 
+                - generic [ref=e373]: "14"
+              - generic [ref=e375]: "15"
+              - generic [ref=e378]: "16"
+              - generic [ref=e380]: "17"
+              - generic [ref=e382]: "18"
+              - generic [ref=e384]: "19"
+              - generic [ref=e386]: "20"
+              - generic [ref=e389]: "21"
+              - generic [ref=e391]: "22"
+              - generic [ref=e392]:
+                - generic [ref=e393] [cursor=pointer]: 
+                - generic [ref=e394]: "23"
+              - generic [ref=e395]:
+                - generic [ref=e396] [cursor=pointer]: 
+                - generic [ref=e397]: "24"
+              - generic [ref=e399]: "25"
+              - generic [ref=e402]: "26"
+              - generic [ref=e404]: "27"
+              - generic [ref=e405]:
+                - generic [ref=e406] [cursor=pointer]: 
+                - generic [ref=e407]: "28"
+              - generic [ref=e409]: "29"
+              - generic [ref=e411]: "30"
+            - generic [ref=e300]:
+              - generic [ref=e520]: "import { useState } from 'react';"
+              - generic [ref=e522]: "export default function PricingCard({ tier,"
+              - generic [ref=e524]: const [isClicked, setIsClicked] = useState
+              - generic [ref=e527]: "const handleClick = () => {"
+              - generic [ref=e529]: setIsClicked(true);
+              - generic [ref=e531]: setTimeout(() => setIsClicked(false), 600);
+              - generic [ref=e533]: "};"
+              - generic [ref=e536]: "const baseStyle = {"
+              - generic [ref=e538]: "transition: 'all 0.4s cubic-bezier(0.23, 1, 0."
+              - generic [ref=e540]: "isHovered, onHover, onHoverEnd }) {"
+              - generic [ref=e542]: (false);
+              - generic [ref=e544]: 320, 1)',
+              - generic [ref=e546]: "boxShadow: isHovered"
+              - generic [ref=e548]: "? tier.featured"
+              - generic [ref=e550]: "? '0 20px 60px rgba(168, 85, 247, 0.25),"
+              - generic [ref=e552]: 0 0 40px rgba(168, 85, 247, 0.15)'
+              - generic [ref=e554]: ": '0 15px 40px rgba(0, 0, 0, 0.1)'"
+              - generic [ref=e556]: ": tier.featured"
+              - generic [ref=e558]: "? '0 10px 30px rgba(168, 85, 247, 0.15)'"
+              - generic [ref=e560]: ": '0 4px 15px rgba(0, 0, 0, 0.05)',"
+              - generic [ref=e562]: "transform: isHovered ? 'translateY(-8px)' :"
+              - generic [ref=e564]: "'translateY(0)',"
+              - generic [ref=e566]: "};"
+              - generic [ref=e569]: const bgStyle = tier.featured
+              - generic [ref=e571]: "? {"
+              - generic [ref=e573]: "background: 'linear-gradient(135deg,"
+              - generic [ref=e575]: "#f3e8ff 0%, #faf5ff 100%)',"
+              - generic [ref=e577]: "borderColor: '#d8b4fe',"
+              - generic [ref=e579]: "}"
+              - generic [ref=e581]: ": {"
+              - generic [ref=e583]: "background: '#ffffff',"
+              - generic [ref=e585]: "borderColor: '#e5e7eb',"
+            - textbox "Editor content" [ref=e346]: "</div> </div> </div> ); }"
+  - alert [ref=e46]
+  - generic [ref=e347]:
+    - alert
+    - alert
